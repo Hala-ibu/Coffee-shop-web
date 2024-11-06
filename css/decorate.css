@@ -1,29 +1,32 @@
-html {
-    background-color: rgb(187, 255, 0);
-    padding: 2em;
+.navigation{
+    background-color: rgba(0, 0, 0, 0.699);
+    
+    margin: 0%;
 }
 fieldset{
-    background-color: aliceblue;
-    height: 25em;
-    
-    
-    p{
-        font-size: x-large;
-        
-    }
+    background-color: rgba(0, 0, 0, 0.514);
+    color: rgb(101, 109, 74);
+    font-size: x-large;
 }
-.navigation{
-    background-color: brown;
-    
-}
-section{
-    background-color: aqua;
-}
-aside{
-    background-color: blueviolet;
-}
+
 legend{
-    text-align: center;
-    font-size: xx-large;
+    font-size: 2em;
+}
+
+.toimgbackground{
+    background-color:#B6AD90;
+    margin: 0%;
+    background-image: url(/images/shop\ 1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed
     
+}
+
+
+body{
+    background-color:#B6AD90;
+    margin: 0em;
+    font-family:;
 }
