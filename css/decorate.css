@@ -1,26 +1,57 @@
-.navigation{
-    background-color: rgba(0, 0, 0, 0.699);
+
+
+
+
+.right{
+    justify-content: start;
+    left: 2em;
+}
+.register{
+    justify-content: end;
+    left: 400px;;
     
-    margin: 0%;
+}
+header{
+    display:flex;
+  max-width:9800px;
+  margin:auto;
+}
+img {
+    vertical-align: top;
+    width="600px"
+  height="337"
+  style="width: 300px; height: 337px;"
+  }
+
+.navigation{
+    background-color: rgb(105, 90, 66);
+    padding: 1em;
+    font-size: large;
+    border-radius: 30px;
+    
 }
 fieldset{
-    background-color: rgba(0, 0, 0, 0.514);
-    color: rgb(101, 109, 74);
-    font-size: x-large;
+    color: #432818;
+    border-style: solid;
+    border-color: #432818;
+    border-width: 10px;
+    border-radius: 15px 50px;
+
 }
 
 legend{
     font-size: 2em;
+
 }
 
 .toimgbackground{
     background-color:#B6AD90;
     margin: 0%;
-    background-image: url(/images/shop\ 1.jpg);
+    background-image: url(/images/63e9f7b9-f713-422b-a0f1-10ba6a31ea0b.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: fixed
+    background-position: fixed;
     
 }
 
@@ -28,5 +59,6 @@ legend{
 body{
     background-color:#B6AD90;
     margin: 0em;
-    font-family:;
+    font-family:'poppins-thin'; 
+    font-size: 22px;
 }
