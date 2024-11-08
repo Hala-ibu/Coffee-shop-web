@@ -1,0 +1,18 @@
+
+.center-dat{
+        font-size: 3em;
+        display: grid;
+    place-items: center;
+
+}
+@media (max-width: 768px) {
+        .center-dat {
+            font-size: 25px;
+            display: grid;
+            place-items: center;
+}
+            
+        }
+.bg-color{
+    background-color: black;
+}
