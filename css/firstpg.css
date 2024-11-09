@@ -1,18 +1,18 @@
 
-.center-dat{
-        font-size: 3em;
-        display: grid;
-    place-items: center;
+
+img {
+    border-radius: 50px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+    height: auto; 
+}
+.row{
+    padding: 2em;
 
 }
-@media (max-width: 768px) {
-        .center-dat {
-            font-size: 25px;
-            display: grid;
-            place-items: center;
+
+body{
+    background-color: #969180;
 }
-            
-        }
-.bg-color{
-    background-color: black;
+h1{
+    color: #031f16;
 }
