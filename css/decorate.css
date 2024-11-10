@@ -18,15 +18,14 @@ header{
 }
 img {
     vertical-align: top
-    width=600px
-    height=337px
+
   }
 
 .navigation{
     background-color: rgb(105, 90, 66);
     padding: 1em;
     font-size: large;
-    border-radius: 30px;  }
+
 fieldset{
     color: #432818;
     border-style: solid;
