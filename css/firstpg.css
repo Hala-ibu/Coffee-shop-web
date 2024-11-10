@@ -23,3 +23,20 @@ h2{
     place-items: center;
 }
 
+a {
+    color: rgb(255, 255, 255); 
+    text-decoration: none;
+
+}
+
+a:visited {
+    color: rgb(255, 255, 255); 
+}
+
+a:active {
+    color: rgb(110, 79, 12); 
+}
+
+a:hover {
+    color: rgb(136, 98, 55); 
+}
