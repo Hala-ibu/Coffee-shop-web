@@ -5,10 +5,7 @@ img {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
     height: auto; 
 }
-.row{
-    padding: 2em;
 
-}
 
 body{
     background-color: #969180;
@@ -16,6 +13,12 @@ body{
 h1{
     color: #031f16;
     font-size: 7em;
+    display: grid;
+    place-items: center;
+}
+h2{
+    color: #031f16;
+    font-size: 3em;
     display: grid;
     place-items: center;
 }
