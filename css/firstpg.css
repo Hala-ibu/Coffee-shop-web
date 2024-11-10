@@ -15,4 +15,8 @@ body{
 }
 h1{
     color: #031f16;
+    font-size: 7em;
+    display: grid;
+    place-items: center;
 }
+
