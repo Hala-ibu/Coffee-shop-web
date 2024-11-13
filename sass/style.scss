@@ -1,0 +1,54 @@
+@import "./var&func";
+
+body{
+    @include hyper
+}
+.love{
+    background-image: url('/images/Modern\ Coffee\ Heartbeat\ Neon\ Light\ For\ Coffee\ Shop\ Decor\,\ Custom\ Neon\ Sign\,\ Coffee\ Shop\ Wall\ Decor\,\ Coffee\ Lover\ Gifts\,\ Cafe\ Store\ Led\ Sign.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; 
+}
+
+header{
+    color: $coffee;
+    width: auto;
+    text-shadow: 6px 4px 4px $royalgreen;
+    .row{
+        @include flexxyy;
+    }
+    
+}
+
+.doit{
+    width:fit-content;
+    background-color: $royalgreen;
+    color: $choco;
+    border: 2px solid $vanila;
+    text-shadow: 0px 0px 0px $choco;
+}
+
+.dome{
+    background-image: url('/images/Sunday\ activities_\ coffee\ &\ people\ watching\ 👀❤️\ _\ Koffiebar\,\ Eten\,\ Londen.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+
+ .deco{
+    width: fit-content;
+    border: 2em;
+    
+ }
+th{
+    font-size: 1.5em;
+    }
+    
+.footer{
+    background-color: $choco;
+    color: white;
+}
+.baby{
+    background-color: $coffee;
+}

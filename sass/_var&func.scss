@@ -1,0 +1,30 @@
+$royalgreen: rgb(8, 39, 0);
+$coffee: rgb(214, 192, 162);
+$choco:rgb(0, 0, 0);
+$vanila:rgb(201, 204, 157);
+
+@mixin flexxyy{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+@mixin hyper{
+    a {
+        color: rgb(255, 255, 255); 
+        text-decoration: none;
+    
+    }
+    
+    a:visited {
+        color: rgb(255, 255, 255); 
+    }
+    
+    a:active {
+        color: rgb(110, 79, 12); 
+    }
+    
+    a:hover {
+        color: rgb(136, 98, 55); 
+    }
+}
