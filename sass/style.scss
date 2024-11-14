@@ -11,9 +11,9 @@ body{
 }
 
 header{
-    color: $coffee;
+    color: $milkcof;
     width: auto;
-    text-shadow: 6px 4px 4px $royalgreen;
+    text-shadow: 6px 4px 4px $choco;
     .row{
         @include flexxyy;
     }
@@ -28,13 +28,14 @@ header{
     text-shadow: 0px 0px 0px $choco;
 }
 
-.dome{
-    background-image: url('/images/Sunday\ activities_\ coffee\ &\ people\ watching\ 👀❤️\ _\ Koffiebar\,\ Eten\,\ Londen.jpg');
+.bg-image{
+    background-image: url('/images/Coffee\ espresso\ template.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; 
 }
-
+.bg-text {
+    padding: 20px;  }
 
  .deco{
     width: fit-content;
