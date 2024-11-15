@@ -1,0 +1,118 @@
+@import "./var&func";
+
+
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: poppins;
+    @include hyper;
+}
+
+
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(/images/4K\ Cozy\ Coffee\ Shop\ Ambience_\ Background\ Instrumental\ to\ Relax\,\ Study\,\ Work.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+
+
+
+.boxit{
+    width: 50%;
+    background-color: transparent;
+    color: $coffee;
+    border-radius:  50px; 
+    padding: 5% 1%;
+    border: 3px solid $coffee;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 50px black;
+}
+
+
+
+
+h1{
+    font-size: 40px;
+    text-align: center;
+    color: wheat;
+}
+
+
+
+.box{
+    width: 100%;
+    margin: 10px 0;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+input{
+    width: 85%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 3px solid $coffee;
+    border-radius: 40px;
+    font-size: 20px;
+    color: $coffee;
+    padding: 20px 45px 20px 20px;
+}
+
+
+
+::placeholder{
+    text-align: center;
+    color: $coffee;
+}
+
+
+
+.rememberme1{
+    text-align: center;
+    font-size: 17px;
+    a{
+        text-decoration: none;
+    }
+}
+
+
+
+
+button{
+    a{
+        text-decoration: none;
+    }
+    margin: 10px;
+    padding: 5px;
+    width: 20%;
+    height: fit-content;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background-color: $coffee;
+}
+
+
+
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    
+}

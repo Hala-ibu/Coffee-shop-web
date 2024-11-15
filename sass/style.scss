@@ -1,7 +1,8 @@
 @import "./var&func";
 
 body{
-    @include hyper
+    @include hyper;
+    background-color: $coffee;
 }
 .love{
     background-image: url('/images/Modern\ Coffee\ Heartbeat\ Neon\ Light\ For\ Coffee\ Shop\ Decor\,\ Custom\ Neon\ Sign\,\ Coffee\ Shop\ Wall\ Decor\,\ Coffee\ Lover\ Gifts\,\ Cafe\ Store\ Led\ Sign.jpg');
@@ -13,34 +14,152 @@ body{
 header{
     color: $milkcof;
     width: auto;
+    border: 5px solid $choco;  
     text-shadow: 6px 4px 4px $choco;
     .row{
         @include flexxyy;
     }
-    
+    img{
+        border: 4px solid $choco;
+        background-color: $milkcof;
+    }
+    h3{
+        border: 5px dashed $choco;
+        background-color: rgba(207, 112, 49, 0.28);  
+    }
 }
 
 .doit{
     width:fit-content;
-    background-color: $royalgreen;
+    background-color: $milkcof;
     color: $choco;
-    border: 2px solid $vanila;
+    border: 2px solid $choco;
     text-shadow: 0px 0px 0px $choco;
 }
 
  .deco{
     width: fit-content;
-    border: 2em;
-    
+    border: 3px dashed $choco; 
+    background-color: $milkcof;  
+    th{
+        font-size: 1.5em;
+        } 
  }
-th{
-    font-size: 1.5em;
-    }
+
     
 .footer{
     background-color: $choco;
-    color: white;
+    color: $milkcof;
 }
 .baby{
     background-color: $coffee;
+    border: 4px solid $choco;
 }
+.modal-header,.modal-footer,.card-header{
+    background-color:$milkcof;
+    color: $choco;
+    .button{
+        color: $milkcof;
+    }
+    border: 3px solid $choco;
+
+
+}
+.card-header{
+    display: flex;
+    justify-content: center; 
+    align-items: center;}
+.modal-body{
+    background-color:$coffee;
+    color: $choco;
+    border: 2px solid $choco;
+
+}
+
+.navbar{
+    background-color: $choco;
+    color: $milkcof;
+    a {
+        color: $milkcof;
+        text-decoration: none;
+      }
+      a:visited {
+        color: $milkcof;
+      }
+      a:active {
+        color:$milkcof ;
+      }
+      a:hover {
+        color: $coffee; 
+      }
+      
+}
+.whatisnew{
+    border: 7px solid $choco;
+}
+.borderdis {
+    border: 4px solid $choco;
+    img{
+        border: 2px solid $choco;
+        background-color: $milkcof;
+    }
+}
+.takeaboutus,.takeowner{
+    border: 2px solid $choco;
+    background-color: $milkcof;
+    h2,p{
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+    }
+    h2{
+        font-size: xxx-large;
+    }
+}
+
+.ourdearpartner{
+    border: 2px solid $choco;
+    background-color: $milkcof;
+    img{
+        background-color: $milkcof;
+        border: 2px solid $choco;
+    }
+    h2,.card{
+        background-color: $milkcof;
+        border: 2px solid $choco;
+        a{
+            color: $choco;
+        }
+}
+
+}
+
+.menu{
+    border: 2px solid $coffee;
+    background-color: $choco;
+}
+.card.partners{
+    background-color: $milkcof;
+    border: 2px solid $choco;
+    img{
+        max-width: 250px;
+        height: auto;
+        border-radius: 70px;
+        border: 2px solid $choco;
+        gap: 4px !important;
+        margin-right : 20px;
+        margin-left : 20px;
+
+    }
+}
+
+figcaption{
+    font-size: x-large;
+    width: 250px;
+    height: auto;
+    border-radius: 70px;
+    border: 2px solid $choco;
+    gap: 4px !important;
+    margin-right : 6%;
+    margin-left : 4%;}
+

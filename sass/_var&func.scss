@@ -1,8 +1,8 @@
 $royalgreen: rgb(8, 39, 0);
-$coffee: rgb(214, 192, 162);
-$choco:rgb(0, 0, 0);
-$vanila:rgb(201, 204, 157);
-$milkcof:rgb(176, 145, 110);
+$coffee: rgb(211, 184, 147);
+$choco:rgb(15, 6, 1);
+$vanila:rgb(176, 179, 132);
+$milkcof:rgb(116, 87, 54);
 
 
 @mixin flexxyy{
@@ -13,17 +13,17 @@ $milkcof:rgb(176, 145, 110);
 
 @mixin hyper{
     a {
-        color: rgb(255, 255, 255); 
+        color: $coffee; 
         text-decoration: none;
     
     }
     
     a:visited {
-        color: rgb(255, 255, 255); 
+        color: $milkcof; 
     }
     
     a:active {
-        color: rgb(110, 79, 12); 
+        color: $vanila; 
     }
     
     a:hover {
