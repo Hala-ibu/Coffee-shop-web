@@ -1,0 +1,140 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+* a {
+  color: rgb(211, 184, 147);
+  text-decoration: none;
+}
+* a:visited {
+  color: rgb(116, 87, 54);
+}
+* a:active {
+  color: rgb(176, 179, 132);
+}
+* a:hover {
+  color: rgb(136, 98, 55);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(/images/4K\ Cozy\ Coffee\ Shop\ Ambience_\ Background\ Instrumental\ to\ Relax\,\ Study\,\ Work.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.boxit {
+  width: 50%;
+  background-color: transparent;
+  color: rgb(211, 184, 147);
+  border-radius: 50px;
+  padding: 5% 1%;
+  border: 3px solid rgb(211, 184, 147);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 50px black;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  color: wheat;
+}
+
+.box {
+  width: 100%;
+  margin: 10px 0;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+input, select {
+  width: 85%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 3px solid rgb(211, 184, 147);
+  border-radius: 40px;
+  font-size: 20px;
+  color: rgb(211, 184, 147);
+  padding: 20px 45px 20px 20px;
+}
+
+.boo {
+  width: 85%;
+  padding: px 45px 20px 20px;
+  background: transparent;
+  color: rgb(211, 184, 147);
+  text-align: center;
+  border: 3px solid rgb(211, 184, 147);
+  border-radius: 40px;
+  font-size: 20px;
+  display: flex;
+}
+.boo option {
+  background-color: rgb(211, 184, 147);
+  color: rgb(116, 87, 54);
+}
+
+.doo {
+  width: 85%;
+  background: transparent;
+  color: rgb(211, 184, 147);
+  text-align: center;
+  border: 3px solid rgb(211, 184, 147);
+  border-radius: 40px;
+  font-size: 20px;
+  margin-left: 8%;
+  display: flex;
+  justify-content: space-evenly;
+  height: auto;
+  padding: 9%;
+}
+
+::-moz-placeholder {
+  text-align: center;
+  color: rgb(211, 184, 147);
+}
+
+::placeholder {
+  text-align: center;
+  color: rgb(211, 184, 147);
+}
+
+.rememberme1 {
+  text-align: center;
+  font-size: 17px;
+}
+.rememberme1 a {
+  text-decoration: none;
+}
+
+button {
+  margin: 10px;
+  padding: 5px;
+  width: 20%;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  background-color: rgb(211, 184, 147);
+}
+button a {
+  text-decoration: none;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+}/*# sourceMappingURL=register.css.map */

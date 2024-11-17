@@ -1,0 +1,32 @@
+$royalgreen: rgb(8, 39, 0);
+$coffee: rgb(211, 184, 147);
+$choco:rgb(15, 6, 1);
+$vanila:rgb(176, 179, 132);
+$milkcof:rgb(116, 87, 54);
+
+
+@mixin flexxyy{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+@mixin hyper{
+    a {
+        color: $coffee; 
+        text-decoration: none;
+    
+    }
+    
+    a:visited {
+        color: $milkcof; 
+    }
+    
+    a:active {
+        color: $vanila; 
+    }
+    
+    a:hover {
+        color: rgb(136, 98, 55); 
+    }
+}
