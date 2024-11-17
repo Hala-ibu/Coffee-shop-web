@@ -56,7 +56,7 @@ h1 {
   justify-content: center;
 }
 
-input {
+input, select {
   width: 85%;
   height: 100%;
   background: transparent;
@@ -67,6 +67,37 @@ input {
   font-size: 20px;
   color: rgb(211, 184, 147);
   padding: 20px 45px 20px 20px;
+}
+
+.boo {
+  width: 85%;
+  padding: px 45px 20px 20px;
+  background: transparent;
+  color: rgb(211, 184, 147);
+  text-align: center;
+  border: 3px solid rgb(211, 184, 147);
+  border-radius: 40px;
+  font-size: 20px;
+  display: flex;
+}
+.boo option {
+  background-color: rgb(211, 184, 147);
+  color: rgb(116, 87, 54);
+}
+
+.doo {
+  width: 85%;
+  background: transparent;
+  color: rgb(211, 184, 147);
+  text-align: center;
+  border: 3px solid rgb(211, 184, 147);
+  border-radius: 40px;
+  font-size: 20px;
+  margin-left: 8%;
+  display: flex;
+  justify-content: space-evenly;
+  height: auto;
+  padding: 9%;
 }
 
 ::-moz-placeholder {

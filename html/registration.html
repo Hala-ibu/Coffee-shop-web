@@ -11,25 +11,43 @@
 
 <body >
     
-    <form action="post" class="boxit">
+    <form action="https://jsonplaceholder.typicode.com/posts" method="POST" target="_blank" class="boxit">
             <legend><h1>Regestration</h1></legend>
             <br>
             <div class="box"> 
-            <input type="text" placeholder="Username" required></div>
-            <div class="box"><input type="text" placeholder="Name" required> </div>
-            <div class="box"><input type="email" placeholder="Email" required> </div>
-            <div class="box"> <input type="password" placeholder="Password" required></div>
-            <div class="box"> <input type="number" placeholder="Age" required></div>
-            <div class="row">
-            <button type="submit" class="col-2"><a href="/html/first.page.html">sign up</a></button>
+            <input type="text" placeholder="Username" name="Username" required></div>
+            <div class="box"><input type="text" placeholder="First Name" id="First Name" name="First Name" required> </div>
+            <div class="box"><input type="text" placeholder="Last Name" name="Last Name" required> </div>
+
+            <div class="box"><input type="email" placeholder="Email" name="Email" required> </div>
+            <div class="box"> <input type="password" placeholder="Password" name="Password" required></div>
+            <div class="box"> <input type="password" placeholder="Confirm Password" name="Confirm Password" required></div>
+            <div class="box"><select class="form-select boo" name="Gender" required>
+              <option value="" disabled selected >Gender</option>
+              <option value="Male"  >Male</option>
+              <option value="Female"  >Female</option>
+              <option value="Other"  >Other</option>
+            </select></div>
+            <div class="box doo"><label class="form-label hi" >Contact Method: </label>
+                <div>
+                    <label for="contact-email" >Email</label>
+                  <input type="radio" id="contact-email"  value="Email" name="Contact Method:" required>
+                </div>
+                <div>
+                    <label for="contact-phone">Phone</label>
+                  <input type="radio" id="contact-phone"  value="Phone" name="Contact Method:" required>
+                  
+                </div></div>
+            <div class="box"> <input type="number" placeholder="Age" name="Age" required></div>
+            <a href="£" class="rememberme1">Forgot password?</a><br>
+            <div class="row"><label for="check">I agree to the terms and conditions</label>
+        <input type="checkbox" id="check" name="Terms" required></div>
+            <div>
+            <button type="submit" class="col-2">sign up <br><a href="first.page.html">go to first page</a></button>
             <div class="col-6">
             <p>have an account: <a href="login.html">login</a></p>
-            
             </div>
-            <a href="£" class="rememberme1">Forgot password?</a>
             </div>
-            
-
     </form>
     
 </body>

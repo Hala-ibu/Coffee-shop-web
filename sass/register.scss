@@ -61,7 +61,8 @@ h1{
 
 
 
-input{
+
+input,select{
     width: 85%;
     height: 100%;
     background: transparent;
@@ -74,6 +75,37 @@ input{
     padding: 20px 45px 20px 20px;
 }
 
+
+.boo{
+    width: 85%;
+    padding: px 45px 20px 20px;
+    background: transparent;
+    color: $coffee;
+    text-align: center;
+    border: 3px solid $coffee;
+    border-radius: 40px;
+    font-size: 20px;
+    display: flex;
+    option{
+        background-color: $coffee;
+        color: $milkcof;
+    }
+    
+}
+.doo{
+    width: 85%;
+    background: transparent;
+    color: $coffee;
+    text-align: center;
+    border: 3px solid $coffee;
+    border-radius: 40px;
+    font-size: 20px;
+    margin-left: 8%;
+    display: flex;
+    justify-content: space-evenly;
+    height: auto;
+    padding: 9%;
+}
 
 
 ::placeholder{

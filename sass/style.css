@@ -179,4 +179,25 @@ figcaption {
   gap: 4px !important;
   margin-right: 6%;
   margin-left: 4%;
+}
+
+.audioright {
+  margin-left: 2%;
+}
+
+.vid {
+  border-radius: 50px;
+  border: 5px dashed rgb(15, 6, 1);
+}
+
+.bye {
+  width: 100%;
+  background-color: rgb(116, 87, 54);
+  color: rgb(211, 184, 147);
+  border-radius: 50px;
+  padding: 5% 1%;
+  border: 3px solid rgb(15, 6, 1);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 50px black;
 }/*# sourceMappingURL=style.css.map */
