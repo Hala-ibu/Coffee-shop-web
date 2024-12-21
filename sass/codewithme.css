@@ -126,6 +126,16 @@ body a:hover {
   background-color: #806443;
 }
 
+@media (max-width: 1024px) {
+  .whatisnew {
+    width: 100%;
+    height: auto;
+  }
+  .sec2 {
+    width: 100%;
+    height: 1000vh;
+  }
+}
 .whatisnew {
   width: 100%;
   height: 100vh;
@@ -133,7 +143,7 @@ body a:hover {
 
 .sec2 {
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   background-color: #E1BB80;
   margin: 0%;
   padding: 0%;
@@ -163,6 +173,39 @@ body a:hover {
   margin: 20px 0;
   width: 50%;
   color: #806443;
+}
+.sec2 .card-header {
+  background-color: whitesmoke;
+  width: 50%;
+  padding: 15px;
+  font-size: 20px;
+  margin: 5px 0;
+  border: 5px double #352208;
+  border-radius: 30px;
+}
+.sec2 .header {
+  background-color: whitesmoke;
+  padding: 5px;
+  font-size: 20px;
+  margin: 5px;
+  border: 5px double #352208;
+  border-radius: 30px;
+  text-align: center;
+}
+.sec2 .card-content {
+  padding: 15px;
+  display: none;
+  background-color: #C3A995;
+  border: 2px s #352208;
+  border-radius: 30px;
+}
+.sec2 .card-content.show {
+  display: block;
+}
+.sec2 .card {
+  background-color: rgba(255, 255, 255, 0);
+  margin: 2%;
+  border: #6F4E27;
 }
 .sec2 .gallery {
   display: grid;
@@ -405,6 +448,24 @@ body.dark-theme {
   margin: 20px 0;
   width: 50%;
   color: #806443;
+}
+
+.dark-theme #random-news {
+  color: #806443;
+}
+.dark-theme #random-news a {
+  color: #E1BB80;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.dark-theme #random-news a:hover {
+  color: #EB6A14;
+  -webkit-text-decoration: dotted;
+          text-decoration: dotted;
+}
+
+.dark-theme strong {
+  color: #E1BB80;
 }
 
 .dark-theme .sec5 {

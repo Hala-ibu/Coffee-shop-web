@@ -1,54 +1,128 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" context="device-width, initial-scales.0">
-    <meta http-equiv="X-UA-Compatible" content-IE="edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>register please</title>
-    </head>
+    <title>Register Please</title>
     <link rel="stylesheet" href="/sass/register.css">
+    <style>
+        #message {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            display: none;
+            
+        }
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+    </style>
+</head>
+<body>
 
-<body >
-    
-    <form action="https://jsonplaceholder.typicode.com/posts" method="POST" target="_blank" class="boxit">
-            <legend><h1>Regestration</h1></legend>
-            <br>
-            <div class="box"> 
-            <input type="text" placeholder="Username" name="Username" required></div>
-            <div class="box"><input type="text" placeholder="First Name" id="First Name" name="First Name" required> </div>
-            <div class="box"><input type="text" placeholder="Last Name" name="Last Name" required> </div>
+    <form id="myForm" class="boxit">
+        <legend><h1>Registration</h1></legend>
+        <br>
+        <div class="box"> 
+            <input type="text" placeholder="Username" id="Username" name="Username" required>
+        </div>
+        <div class="box">
+            <input type="text" placeholder="First Name" id="FirstName" name="FirstName" required>
+        </div>
+        <div class="box">
+            <input type="text" placeholder="Last Name" id="LastName" name="LastName" required>
+        </div>
 
-            <div class="box"><input type="email" placeholder="Email" name="Email" required> </div>
-            <div class="box"> <input type="password" placeholder="Password" name="Password" required></div>
-            <div class="box"> <input type="password" placeholder="Confirm Password" name="Confirm Password" required></div>
-            <div class="box"><select class="form-select boo" name="Gender" required>
-              <option value="" disabled selected >Gender</option>
-              <option value="Male"  >Male</option>
-              <option value="Female"  >Female</option>
-              <option value="Other"  >Other</option>
-            </select></div>
-            <div class="box doo"><label class="form-label hi" >Contact Method: </label>
-                <div>
-                    <label for="contact-email" >Email</label>
-                  <input type="radio" id="contact-email"  value="Email" name="Contact Method:" required>
-                </div>
-                <div>
-                    <label for="contact-phone">Phone</label>
-                  <input type="radio" id="contact-phone"  value="Phone" name="Contact Method:" required>
-                  
-                </div></div>
-            <div class="box"> <input type="number" placeholder="Age" name="Age" required></div>
-            <a href="£" class="rememberme1">Forgot password?</a><br>
-            <div class="row"><label for="check">I agree to the terms and conditions</label>
-        <input type="checkbox" id="check" name="Terms" required></div>
+        <div class="box">
+            <input type="email" placeholder="Email" id="Email" name="Email" required>
+        </div>
+        <div class="box">
+            <input type="password" placeholder="Password" id="Password" name="Password" required>
+        </div>
+        <div class="box">
+            <select class="form-select boo" id="Gender" name="Gender" required>
+                <option value="" disabled selected>Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div class="box doo">
+            <label class="form-label hi">Contact Method:</label>
             <div>
-            <button type="submit" class="col-2">sign up <br></button>
+                <label for="contact-email">Email</label>
+                <input type="radio" id="contact-email" value="Email" name="ContactMethod" required>
+            </div>
+            <div>
+                <label for="contact-phone">Phone</label>
+                <input type="radio" id="contact-phone" value="Phone" name="ContactMethod" required>
+            </div>
+        </div>
+        <div class="box">
+            <input type="number" placeholder="Age" id="Age" name="Age" required>
+        </div>
+        <a href="£" class="rememberme1">Forgot password?</a><br>
+        <div class="row">
+            <label for="check" name="check">I agree to the terms and conditions</label>
+            <input type="checkbox" id="check" name="Terms" required>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-primary col-2">Sign Up</button>
             <div class="col-6">
-            <p>have an account: <a href="login.html">login</a></p>
+                <p>Have an account? <a href="login.html">Login</a></p>
             </div>
-            </div>
+        </div>
     </form>
     
+    <div id="message"></div>
+
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const Username = document.getElementById('Username').value;
+            const FirstName = document.getElementById('FirstName').value;
+            const LastName = document.getElementById('LastName').value;
+            const Email = document.getElementById('Email').value;
+            const Age = document.getElementById('Age').value;
+            const check = document.getElementById('check').checked; 
+
+            const message = document.getElementById('message');
+            message.textContent = 'Processing...';
+            message.style.display = 'block';
+
+            setTimeout(function() {
+                const formData = { Username, Email, check, Age, FirstName, LastName };
+
+                const xhr = new XMLHttpRequest();
+                xhr.open('POST', 'https://jsonplaceholder.typicode.com/posts', true);
+                xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
+
+                xhr.onload = function () {
+                    if (xhr.status === 201) {
+                        message.textContent = 'Form submitted successfully!';
+                        message.className = 'success';
+
+                        setTimeout(function() {
+                            window.location.href = "tryinganewstyle.html";
+                        }, 1500); // 2000ms = 2 seconds
+                    } else {
+                        message.textContent = 'An error occurred. Please try again!';
+                        message.className = 'error';
+                    }
+                };
+
+                xhr.send(JSON.stringify(formData));
+            }, 15);
+        });
+
+    </script>
+
 </body>
 </html>

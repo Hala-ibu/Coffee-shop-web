@@ -115,7 +115,16 @@ body{
         
     }
 }
-
+@media (max-width: 1024px)  {
+    .whatisnew{
+        width: 100%;
+        height: auto;
+    }
+    .sec2 {
+        width: 100%;
+        height: 1000vh;
+}
+}
 .whatisnew{
     width: 100%;
     height: 100vh;
@@ -123,7 +132,7 @@ body{
 
 .sec2 {
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     background-color: $honey;
     margin: 0%;
     padding: 0%;
@@ -157,7 +166,42 @@ body{
         color: $bb;
 
     }
+    .card-header {
+        background-color: whitesmoke;
+        width: 50%;
+        padding: 15px;
+        font-size: 20px;
+        margin: 5px 0;
+        border: 5px double $choco;
+        border-radius: 30px;
+        
+      }
+      .header {
+        background-color: whitesmoke;
+        padding: 5px;
+        font-size: 20px;
+        margin: 5px ;
+        border: 5px double $choco;
+        border-radius: 30px;
+        text-align: center;
+      }
+      .card-content {
+        padding: 15px;
+        display: none; 
+        background-color: $peachbrown;
+        border: 2px s $choco;
+        border-radius: 30px;
 
+      }
+      .card-content.show {
+        display: block;
+
+      }
+.card{
+    background-color: rgba(255, 255, 255, 0);
+    margin: 2%;
+    border: #6F4E27;
+}
     .gallery {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -317,6 +361,8 @@ header{
     color: $choco;
     @include hyper;
     }
+
+   
     .content-toggle h3 {
         cursor: pointer;
         font-size: 32px;
@@ -348,8 +394,7 @@ header{
       .dark-theme .carie {
         background-color: black;
         color: white;
-      }
-      
+      }    
     
       .dark-theme .content-toggle h3 {
         color: $honey;
@@ -395,7 +440,22 @@ header{
             color: $bb;
     
         }
+    }
+    .dark-theme #random-news {
+        a {
+            color: $honey; 
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }    
+        a:hover {
+            color: $orange; 
+            text-decoration:dotted;
+        }
+        color: $bb;
+      }
     
+    .dark-theme strong{
+        color: $honey;
     }
     .dark-theme .sec5{
         background-color: $choco;
@@ -420,4 +480,3 @@ header{
        
       
         }
-    

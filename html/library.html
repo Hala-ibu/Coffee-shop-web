@@ -10,7 +10,33 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/sass/codewithme.css">
 </head>
+<style>
+          .gallery img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
 
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Modal Styles */
+        .modal-dialog {
+            max-width: 90%;
+        }
+
+        .modal-content {
+            background-color: black;
+        }
+
+        .modal-body img {
+            width: auto;
+            height: 100vh;
+        }
+</style>
 
     <body >
       <nav class="navbar navbar-expand-lg ">
@@ -103,19 +129,19 @@
             </div>
               <div class="row ">
                 <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
-                  <img src="/images/library/kids/50 Children's Books that Teach Social-Emotional Intelligence - Nourishing My Scholar.jpg" alt="" class="img-fluid">
+                  <img src="/images/library/kids/50 Children's Books that Teach Social-Emotional Intelligence - Nourishing My Scholar.jpg" alt="Image 1" class="thumbnail img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/library/kids/50 Children's Books that Teach Social-Emotional Intelligence - Nourishing My Scholar.jpg">
                 </div>
                 <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
-                  <img src="/images/library/kids/Happy Beeing Me.jpg" alt="" class="img-fluid">
+                  <img src="/images/library/kids/Happy Beeing Me.jpg" alt="Image 1" class="thumbnail img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/library/kids/Happy Beeing Me.jpg">
                 </div>
                 <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
-                  <img src="/images/library/kids/The Secret Life of Bugs [Book].jpg" alt="" class="img-fluid">
+                  <img src="/images/library/kids/The Secret Life of Bugs [Book].jpg" alt="" class="thumbnail img-fluid"  data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/library/kids/The Secret Life of Bugs [Book].jpg">
                 </div>
                 <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
-                  <img src="/images/library/kids/Mimimoo Illustration _ Digital Illustrator and Content Creator.jpg" alt="" class="img-fluid">
+                  <img src="/images/library/kids/Mimimoo Illustration _ Digital Illustrator and Content Creator.jpg" class="thumbnail img-fluid"  data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/library/kids/Mimimoo Illustration _ Digital Illustrator and Content Creator.jpg">
                 </div>
                 <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
-                  <img src="/images/library/kids/Salima Alikhan Other _ I Can Be All Three -- Salima Alikhan _ Color_ Gold _ Size_ Hardcover.jpg" alt="" class="img-fluid">
+                  <img src="/images/library/kids/Salima Alikhan Other _ I Can Be All Three -- Salima Alikhan _ Color_ Gold _ Size_ Hardcover.jpg" class="thumbnail img-fluid"  data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/library/kids/Salima Alikhan Other _ I Can Be All Three -- Salima Alikhan _ Color_ Gold _ Size_ Hardcover.jpg">
                 </div>
               </div>
               
@@ -130,19 +156,19 @@
               <p id="toggle-content1" style="display: none;">The teen section has all books needed to escape reality and sink into a world of fiction. <br> the perfect collection to read after a long day of studying</p>
             </div>
             <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
-              <img src="/images/library/teen/100 Best Books for 6th Graders (Age 11 – 12).jpg" alt="" class="img-fluid">
+              <img src="/images/library/teen/100 Best Books for 6th Graders (Age 11 – 12).jpg" class="thumbnail img-fluid"  data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/library/teen/100 Best Books for 6th Graders (Age 11 – 12).jpg">
             </div>
             <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
-              <img src="/images/library/teen/100 Best Books for 7th Graders (12 Year Olds).jpg" alt="" class="img-fluid">
+              <img src="/images/library/teen/100 Best Books for 7th Graders (12 Year Olds).jpg" class="thumbnail img-fluid"  data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/library/teen/100 Best Books for 7th Graders (12 Year Olds).jpg">
             </div>
             <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
-              <img src="/images/library/teen/Behind the Canvas [Book].jpg" alt="" class="img-fluid">
+              <img src="/images/library/teen/Behind the Canvas [Book].jpg" class="thumbnail img-fluid"  data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/library/teen/Behind the Canvas [Book].jpg">
             </div>
             <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
-              <img src="/images/library/teen/Pinterest.jpg" alt="" class="img-fluid">
+              <img src="/images/library/teen/Pinterest.jpg" class="thumbnail img-fluid"  data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/library/teen/Pinterest.jpg">
             </div>
             <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
-              <img src="/images/library/teen/Fantasy Book Cover Design.jpg" alt="" class="img-fluid">
+              <img src="/images/library/teen/Fantasy Book Cover Design.jpg" class="thumbnail img-fluid"  data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/library/teen/Fantasy Book Cover Design.jpg">
             </div>
           </div>
       </div>
@@ -156,19 +182,19 @@
       </div>
         <div class="row ">
           <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
-            <img src="/images/library/educational/Other Words For Home (Thorndike Press Large Print Striving Reader Collection).jpg" alt="" class="img-fluid">
+            <img src="/images/library/educational/Other Words For Home (Thorndike Press Large Print Striving Reader Collection).jpg" class="thumbnail img-fluid"  data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/library/educational/Other Words For Home (Thorndike Press Large Print Striving Reader Collection).jpg">
           </div>
           <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
-            <img src="/images/library/educational/Icarus [Book].jpg" alt="" class="img-fluid">
+            <img src="/images/library/educational/Icarus [Book].jpg" class="thumbnail img-fluid"  data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/library/educational/Icarus [Book].jpg">
           </div>
           <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
-            <img src="/images/library/educational/Better Minds.jpg" alt="" class="img-fluid">
+            <img src="/images/library/educational/Better Minds.jpg" class="thumbnail img-fluid"  data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/library/educational/Better Minds.jpg">
           </div>
           <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
-            <img src="/images/library/educational/Out of Character [Book].jpg" alt="" class="img-fluid">
+            <img src="/images/library/educational/Out of Character [Book].jpg" class="thumbnail img-fluid"  data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/library/educational/Out of Character [Book].jpg">
           </div>
           <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
-            <img src="/images/library/educational/Where You See Yourself.jpg" alt="" class="img-fluid">
+            <img src="/images/library/educational/Where You See Yourself.jpg" class="thumbnail img-fluid"  data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/library/educational/Where You See Yourself.jpg">
           </div>
         </div>
     </div>
@@ -182,25 +208,34 @@
     </div>
       <div class="row ">
         <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
-          <img src="/images/library/adults/Don't Let the Forest In.jpg" alt="" class="img-fluid">
+          <img src="/images/library/adults/Don't Let the Forest In.jpg" class="thumbnail img-fluid"  data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/library/adults/Don't Let the Forest In.jpg">
         </div>
         <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
-          <img src="/images/library/adults/Scariest New Horror Books To Read 2024.jpg" alt="" class="img-fluid">
+          <img src="/images/library/adults/Scariest New Horror Books To Read 2024.jpg" class="thumbnail img-fluid"  data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/library/adults/Scariest New Horror Books To Read 2024.jpg">
         </div>
         <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
-          <img src="/images/library/adults/Winter 2020-2021 YA Paperbacks For Your TBR.jpg" alt="" class="img-fluid">
+          <img src="/images/library/adults/Winter 2020-2021 YA Paperbacks For Your TBR.jpg" class="thumbnail img-fluid"  data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/library/adults/Winter 2020-2021 YA Paperbacks For Your TBR.jpg">
         </div>
         <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
-          <img src="/images/library/adults/c37eaff3-6ae3-443d-94a6-34b8a3d3b845.jpg" alt="" class="img-fluid">
+          <img src="/images/library/adults/c37eaff3-6ae3-443d-94a6-34b8a3d3b845.jpg" class="thumbnail img-fluid"  data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/library/adults/c37eaff3-6ae3-443d-94a6-34b8a3d3b845.jpg">
         </div>
         <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
-          <img src="/images/library/adults/100 Best Books for 6th Graders (Age 11 – 12).jpg" alt="" class="img-fluid">
+          <img src="/images/library/adults/100 Best Books for 6th Graders (Age 11 – 12).jpg" class="thumbnail img-fluid"  data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/library/adults/100 Best Books for 6th Graders (Age 11 – 12).jpg">
         </div>
       </div>
   </div>
 </div>
 </section>
-
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-body">
+              <img src="" alt="Large Image" id="modalImage">
+          </div>
+      </div>
+  </div>
+</div>
+</div>
 <footer class="footer " >
           
   <div class="p-3 row " >
@@ -212,6 +247,8 @@
       <a href="mailto:hala.kablaoui@stu.ibu.edu.ba "target="_blank" ><h6>hala.kablaoui@stu.ibu.edu.ba</h6></a>
       <h6>123-456-789</h6>
       <h6>WEB DEVELOPMENT</h6>
+      <a href="feedback.html"><h6>Feedback </h6></a>
+
     </div>
 
     

@@ -38,7 +38,7 @@ function toggleContent() {
     document.body.classList.toggle("dark-theme");
     
   }
-  
+
 const items = document.querySelectorAll('.carousel-item'); 
   let currentIndex = 0;
 
@@ -56,3 +56,29 @@ const items = document.querySelectorAll('.carousel-item');
   function prev() {
     currentIndex = (currentIndex - 1 + items.length) % items.length; 
     showSlide(currentIndex);}
+
+
+
+    function toggleAccordion(id) {
+      const content = document.getElementById(id);
+
+      content.classList.toggle('show');
+
+      const allContents = document.querySelectorAll('.card-content');
+      allContents.forEach(otherContent => {
+        if (otherContent.id !== id) {
+          otherContent.classList.remove('show');
+        }
+      });
+    }
+    
+    const thumbnails = document.querySelectorAll('.thumbnail');
+
+    const modalImage = document.getElementById('modalImage');
+
+    thumbnails.forEach(thumbnail => {
+        thumbnail.addEventListener('click', function() {
+            const imageSrc = this.getAttribute('data-src');
+            modalImage.setAttribute('src', imageSrc)        });
+          });
+      
