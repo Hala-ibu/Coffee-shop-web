@@ -10,6 +10,31 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/sass/codewithme.css">
 </head>
+<style>
+
+figcaption{
+  font-size: 30px;
+  color: #806443;
+}
+.mediasize {
+font-size: 9em;
+display: grid;
+place-items: center;
+height: 10vh;}
+@media (max-width: 768px) {
+  .mediasize {
+    font-size: 5em;
+  }}
+
+
+@media (max-width: 1024px) {
+  .imgitem {
+    width: 90%;
+    height: auto;
+  }
+  
+}
+</style>
 
 
     <body style="font-family: poppins; background-color: #806443">
@@ -18,8 +43,7 @@
           <a class="navbar-brand" href="">☕</a>
           <a class="navbar-brand" href=""><b>RISE & SHINE ITS COFFEE TIME</b></a>
           <button class="button" onclick="switchTheme()">Switch Theme</button>
-          <!-- <div class="audiovanishandappear"><audio src="/images/Laufey_-_Promise_CeeNaija.com_.mp3"  muted controls loop autoplay>Laufey_-_Promise_CeeNaija</audio>
-          </div> -->
+          <audio src="/images/Laufey_-_Promise_CeeNaija.com_.mp3"  muted controls loop autoplay>Laufey_-_Promise_CeeNaija</audio>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -45,28 +69,6 @@
         </div>
       </nav>
 
-<style>
-
-
-.mediasize {
-font-size: 9em;
-display: grid;
-place-items: center;
-height: 10vh;}
-@media (max-width: 768px) {
-  .mediasize {
-    font-size: 5em;
-  }}
-
-
-@media (max-width: 1024px) {
-  .imgitem {
-    width: 90%;
-    height: auto;
-  }
-  
-}
-</style>
 
       <header >
         <br><br><br>
@@ -82,7 +84,7 @@ height: 10vh;}
               <h3 class="description3 ">At SUNSHINE, we strive to create a community hub for everyone who visits. Inspired by our love 
           for both coffee and books, we set out to design a unique space where guests can indulge in 
           expertly crafted brews while exploring our carefully curated library.</h3></div>
-          
+          <img class="col-10 col-lg-5 mt-5  ms-5" style="border-radius: 4%;" src="/images/cofeee breakfast.jpg" alt="">
       </div>
       <div class="row">
 
@@ -120,14 +122,28 @@ height: 10vh;}
                             Professor Amela is a very skilled and experienced Frontend Web Developer, she has worked on many projects and has a lot of knowledge in this field.
                             she has been a profssor in the International burch university. 
                         </p>
-                        <a class="headline3 align" href="mailto:amela.vatres@ibu.edu.ba " target="_blank"><h6>EMAIL HER</h6></a>
-                        <a href="partners" class="button">other partners</a></div></header>         
-
+                        <a class="headline3 align" href="mailto:amela.vatres@ibu.edu.ba " target="_blank"><h6>EMAIL HER</h6></a>     
                     </div>
                 </fieldset>
                 <img class="imgitem" src="/images/160794140.jpg" alt="owner" class=" col-lg-4  m-3">   
-
                 </form>
+                <h3 class="button col-4 p-3 m-3" onclick="toggleContent()">other partners</h3>
+                        <div id="toggle-content" style="display: none;">
+                          <div class=" partners ">
+                            <div style="display: flex; justify-content: space-evenly;"> 
+                            <div style=" border-radius: 100%;"><img src="/images/amila.jpg" alt="" class="img-fluid"></div>
+                            <div><img src="/images/183665468.png" alt="" class="img-fluid"></div>
+                            <div><img src="/images/ajla.png" alt="" class="img-fluid"></div>
+                            <br></div>
+                            <div style="display: flex; justify-content: space-evenly;"> 
+                            <figcaption>Amila Čaušević</figcaption>
+                            <figcaption >adnan-hajro</figcaption>
+                            <figcaption>Ajla Korman</figcaption>
+                            </div>
+                          </div>
+
+                        </div>
+                      
         </section>
         
       <footer class="footer " >

@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="/sass/codewithme.css">
 
 <style>
+  
   .header {
     width: 100%;
     padding: 10px;
@@ -60,8 +61,7 @@
           <a class="navbar-brand" href="">☕</a>
           <a class="navbar-brand" href=""><b>RISE & SHINE ITS COFFEE TIME</b></a>
           <button class="button" onclick="switchTheme()">Switch Theme</button>
-          <!-- <div class="audiovanishandappear"><audio src="/images/Laufey_-_Promise_CeeNaija.com_.mp3"  muted controls loop autoplay>Laufey_-_Promise_CeeNaija</audio>
-          </div> -->
+          <audio src="/images/Laufey_-_Promise_CeeNaija.com_.mp3"  muted controls loop autoplay>Laufey_-_Promise_CeeNaija</audio>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -93,27 +93,107 @@
        <div class="card-body">
         <h1 class="card-header" onclick="toggleAccordion('section1')">5 Star ⭐⭐⭐⭐⭐</h1>
         <div id="section1" class="card-content">
-          This is the content for Section 1.
+          <h3>"Perfect Ambiance!" </h3>
+          <p>
+              "The moment I stepped into Sunshine Coffee, I felt at home. The decor is 
+              warm and inviting, and the scent of freshly brewed coffee is heavenly. The 
+              staff is super friendly, and the cappuccino? Simply divine! Highly recommend 
+              their homemade pastries too!"
+              — Emily J
+          </p><hr>
+          <h3>"Hidden Gem!"
+          </h3>
+          <p>"This cafe is a treasure. I love the library section—spent hours there with my 
+            favorite book and a cup of their signature espresso. The vibe is perfect for both 
+            work and relaxation. Can't wait to come back!"
+            — Sarah K</p><hr>
+            <h3>"The Perfect Spot for Coffee Lovers!"
+            </h3>
+            <p>"Sunshine Coffee has everything a coffee lover dreams of. Their cold brew is 
+              incredible, and the desserts are to die for! I also appreciate their sustainable
+               approach and eco-friendly packaging."
+              — Mia T.
+              </p>hr
+              <h3>"Best Cafe Ever!"
+              </h3>
+              <p>"Their pumpkin spice latte is the reason I look forward to fall! The staff is 
+                so sweet, they remember my name and my order every time. If you're not coming here, you're seriously missing out."
+                — Hannah W.</p><hr>
+                <h3>"Heaven in a Cup!"
+                </h3>
+                <p>"I tried their hazelnut mocha, and it was pure bliss. The pastries are 
+                  so fresh, you can tell they’re made daily. The place gets busy, but it’s 
+                  worth the wait."
+                  — Sophia M.
+                  </p>
+                  <hr>
+                  <h3>"A Must-Visit!"
+                  </h3>
+                  <p>"Their library section is such a unique touch! I spent hours reading 
+                    while sipping on their incredible caramel latte. It’s a great spot to 
+                    unwind. Highly recommend!"
+                    — Ella F.</p><hr>
         </div>
     
         <h1 class="card-header" onclick="toggleAccordion('section2')">4 Star ⭐⭐⭐⭐</h1>
         <div id="section2" class="card-content">
-          This is the content for Section 2.
+          <h3>"Great Coffee, Nice Place!"
+          </h3>
+          <p>"One of the best lattes I’ve ever had. The place is cozy, though a bit crowded during peak hours.
+             If you’re looking for a quiet spot to read, it might not be the best at those times. Still, the service
+              is quick, and the food is delicious."
+            — Mark L.</p>
+            <hr>
+            <h3>"Cozy but Crowded!"
+            </h3>
+            <p>"Sunshine Coffee has a great vibe, and the smell of fresh coffee is amazing! The only downside is that 
+              it’s always packed, so finding a seat is almost impossible. Maybe they should expand."
+              — Ava L.
+              </p><hr>
         </div>
     
         <h1 class="card-header" onclick="toggleAccordion('section3')">3 Star ⭐⭐⭐</h1>
         <div id="section3" class="card-content">
-          This is the content for Section 3.
+          <h3>"Good Coffee, But Room for Improvement!"
+          </h3>
+          <p>"The coffee is great, and I loved the avocado toast. However, the service was 
+            a bit slow, and it took a while to get my order. I hope they improve that because 
+            it’s a lovely place overall."
+            — Jason P.
+            </p><hr>
+            <h3>"Hit or Miss."
+            </h3>
+            <p>"I’ve been here a few times. Sometimes the coffee is amazing, but other times it 
+              tastes like it’s been sitting too long. The staff is friendly enough, but they need
+               to work on consistency."
+              — Oliver H.
+              </p><hr>
         </div>
     
         <h1 class="card-header" onclick="toggleAccordion('section4')">2 Star ⭐⭐</h1>
         <div id="section4" class="card-content">
-          This is the content for Section 4.
+          <h3>"Overrated."
+          </h3>
+          <p>"I don’t understand the glowing reviews. The coffee is average, the service 
+            is painfully slow, and the barista rolled their eyes when I asked for oat milk. 
+            Maybe I caught them on a bad day, but I won’t be back."
+            — Noah S</p>
+            <hr>
+            <h3>"Not Worth the Hype."
+            </h3>
+            <p>"Why does everyone rave about this place? My coffee was lukewarm, the croissant
+               was stale, and I had to wait 20 minutes just to get it. If you’re into overpriced
+                mediocrity, this is your spot."
+              — Ethan T.</p><hr>
         </div>
     
         <h1 class="card-header" onclick="toggleAccordion('section5')">1 Star ⭐</h1>
         <div id="section5" class="card-content">
-          This is the content for Section 5.
+          <h3>"Terrible Experience."
+          </h3>
+          <p>"This place is a joke. The staff is rude, my coffee tasted burnt, and the tables were sticky.
+            I’m not sure how they’re still in business. Avoid at all costs."
+            — Charlotte B.</p>        <hr>
         </div>
       </div>
 
@@ -158,10 +238,16 @@
           <textarea class="header" placeholder="feedback" id="textarea" name="textarea" required></textarea>
         </div>
       </div>
-  
+      <h1 id="random-news">or directly contact us on    <a  href="mailto:hala.kablaoui@stu.ibu.edu.ba "target="_blank" ><h6>hala.kablaoui@stu.ibu.edu.ba</h6></a>
+      </h1>
+      <div >
+        <div id="message" class="message"></div>
+
       <div >
         <button class="col-lg-6 col-4 m-5 button" type="submit">Submit</button>
-      </div><div id="message" class="message"></div>
+      </div>
+      
+      </div>
 
     </div>
     <div class="col-4">

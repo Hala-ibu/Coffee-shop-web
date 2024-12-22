@@ -195,8 +195,7 @@ body a:hover {
 .sec2 .card-content {
   padding: 15px;
   display: none;
-  background-color: #C3A995;
-  border: 2px s #352208;
+  background-color: #806443;
   border-radius: 30px;
 }
 .sec2 .card-content.show {

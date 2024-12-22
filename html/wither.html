@@ -49,8 +49,7 @@
       </nav>
 <section class="sec2">
     <h1 class="card-header">NEWS FROM AROUND THE WORLD</h1>
-    
-    <!-- Random News Section -->
+
     <div  id="random-news">
         <p>Loading...</p>
     </div>
@@ -60,17 +59,15 @@
   <script>
     const apiKey = '3253810604c148c4a27970389031fc03';
 
-    // Function to fetch and display random news
     function fetchRandomNews() {
-        const url = `https://newsapi.org/v2/top-headlines?apiKey=${apiKey}&language=en`;  // Ensure language is set
+        const url = `https://newsapi.org/v2/top-headlines?apiKey=${apiKey}&language=en`; 
 
         fetch(url)
             .then(response => response.json())
             .then(data => {
                 const newsContainer = document.getElementById('random-news');
-                newsContainer.innerHTML = ''; // Clear loading text
+                newsContainer.innerHTML = ''; 
 
-                // Check if articles are present
                 if (data.status === 'ok' && data.articles && data.articles.length > 0) {
                     data.articles.forEach(article => {
                         const articleElement = document.createElement('div');
@@ -91,10 +88,7 @@
                 newsContainer.innerHTML = '<p>Error fetching news. Please try again later.</p>';
                 console.error('Error fetching news:', error);
             });
-    }
-
-    // Fetch random news when the page loads
-    fetchRandomNews();
+    }    fetchRandomNews();
 </script>
 
   <script src="/javascript/script.js"></script>
