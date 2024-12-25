@@ -1,189 +1,240 @@
 <!DOCTYPE html>
 <html>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <title>Library</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="/sass/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/sass/codewithme.css">
 </head>
+<style>
+          .gallery img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
 
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
 
-    <body style="font-family: poppins;">
+        /* Modal Styles */
+        .modal-dialog {
+            max-width: 90%;
+        }
+
+        .modal-content {
+            background-color: black;
+        }
+
+        .modal-body img {
+            width: auto;
+            height: 100vh;
+        }
+</style>
+
+    <body >
       <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">SUNSHINE</a>
+          <a class="navbar-brand" href="">☕</a>
+          <a class="navbar-brand" href=""><b>RISE & SHINE ITS COFFEE TIME</b></a>
+<button class="button" onclick="switchTheme()">Switch Theme</button>
+          <audio src="/images/Laufey_-_Promise_CeeNaija.com_.mp3"  muted controls loop autoplay>Laufey_-_Promise_CeeNaija</audio>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+          <div class="collapse navbar-collapse" id="navbarNav" style=" justify-content: end;">
+            <ul class="navbar-nav ">
               <li class="nav-item">
-                <a class="nav-link active"  style="color: bisque;" aria-current="page" href="/html/library.html">Library!!!</a>
+                <a class="nav-link currentpg " aria-current="page" href="/html/library.html">Library</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/html/first.page.html">Home</a>
+                <a class="nav-link" href="/html/tryinganewstyle.html">home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/html/About.us.html">About us</a>
+                <a class="nav-link" href="/html/aboutnew.html">About </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/html/MENU.htm">Menu</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="studywithus.html">study with us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/html/partner.html">Partner</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/html/registration.html">Register</a>
+              <li class="nav-item ">
+                <a class="nav-link" href="/html/registration.html"><i class="fa-solid fa-user"></i></a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-
 <section class="container-fluid  ">
+  
   <div class="whatisnew">
-        <div class="card fixed-height ">
-            <div class="card w-auto">
-                <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                    </div>
-                    <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="/images/download (2).jpg" class="d-block w-100" alt="Book and Coffee">
-                    </div>
-                      <div class="carousel-item active">
-                          <img src="/images/Herbst.jpg" class="d-block w-100" alt="Book and Coffee">
-                      </div>
-                        <div class="carousel-item active">
-                            <img src="/images/socrates dark academia wallpaper.jpg" class="d-block w-100" alt="Book and Coffee">
-                        </div>
-                          <div class="carousel-item active">
-                              <img src="/images/Aesthetic Library Desktop Wallpaper.jpg" class="d-block w-100" alt="Book and Coffee">
-                          </div>
-                            <div class="carousel-item active">
-                        <img src="/images/library/april desktop laptop wallpaper by sincerely_jehn.jpg" class="d-block w-100" alt="Book and Coffee">
-                      </div>
-                    </div>
-    
-                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                    
-                </div>
-            </div>
-        </div></div></div>
-        <audio src="/images/Laufey_-_Promise_CeeNaija.com_.mp3"  muted controls loop autoplay>Laufey_-_Promise_CeeNaija</audio>
+    <div class="card w-100 rounded">
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          </div>
 
-      <div class="card shadow bg-dark border-white m-5  ">
-        
-        <div class="card shadow bg-dark border-white m-3 ">
-          <div class="card-body  ">
-            <h1 class="card-header ps-5 ms-5 ">KIDS:</h1>
-              <div class="row ">
-                <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
-                  <img src="/images/library/kids/50 Children's Books that Teach Social-Emotional Intelligence - Nourishing My Scholar.jpg" alt="" class="img-fluid">
-                </div>
-                <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
-                  <img src="/images/library/kids/Happy Beeing Me.jpg" alt="" class="img-fluid">
-                </div>
-                <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
-                  <img src="/images/library/kids/The Secret Life of Bugs [Book].jpg" alt="" class="img-fluid">
-                </div>
-                <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
-                  <img src="/images/library/kids/Mimimoo Illustration _ Digital Illustrator and Content Creator.jpg" alt="" class="img-fluid">
-                </div>
-                <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
-                  <img src="/images/library/kids/Salima Alikhan Other _ I Can Be All Three -- Salima Alikhan _ Color_ Gold _ Size_ Hardcover.jpg" alt="" class="img-fluid">
-                </div>
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="/images/library/april desktop laptop wallpaper by sincerely_jehn.jpg" class="d-block w-100" alt="Book and Coffee">
+                  <p></p>
+              </div>
+              <div class="carousel-item">
+                  <img src="/images/library/Read Voraciously.jpg" class="d-block w-100" alt="Coffee Breakfast">
+              </div>
+              <div class="carousel-item">
+                  <img src="/images/library/kids/12 Fantastic, Large-Format, Nonfiction Books for Kids · Book Nerd Mommy.jpg" class="d-block w-100" alt="Coffee and Rain">
+              </div>
+              <div class="carousel-item">
+                  <img src="/images/bookcafe.jpg" class="d-block w-100" alt="Coffee Vibes">
+              </div>
+              <div class="carousel-item">
+                  <img src="/images/Aesthetic Library Desktop Wallpaper.jpg" class="d-block w-100" alt="Cozy Coffee Corner">
+              </div>
+              <div class="carousel-item">
+                  <img src="/images/Vintage Bookshop Candle_ Teakwood + Leather + Mahogany.jpg" class="d-block w-100" alt="Coffee Shop Background">
               </div>
           </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+          
+      </div>
+  </div></div>
+
+      <div class=" m-5  cardie">
+        
+        <div class="card carie m-3 ">
+          <div class="card-body  ">
+            <h1 class="card-header ps-5 ms-5 " >KIDS:</h1>
+            <div class="content-toggle">
+              <h3 onclick="toggleContent()">description</h3>
+              <p id="toggle-content" style="display: none;">The kids section has all books needed to enhance the kids imaginations. <br> the perfect collection to give to your kid while you dose into relaxiation</p>
+            </div>
+              <div class="row ">
+                <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
+                  <img src="/images/library/kids/50 Children's Books that Teach Social-Emotional Intelligence - Nourishing My Scholar.jpg" alt="Image 1" class="thumbnail img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/library/kids/50 Children's Books that Teach Social-Emotional Intelligence - Nourishing My Scholar.jpg">
+                </div>
+                <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
+                  <img src="/images/library/kids/Happy Beeing Me.jpg" alt="Image 1" class="thumbnail img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/library/kids/Happy Beeing Me.jpg">
+                </div>
+                <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
+                  <img src="/images/library/kids/The Secret Life of Bugs [Book].jpg" alt="" class="thumbnail img-fluid"  data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/library/kids/The Secret Life of Bugs [Book].jpg">
+                </div>
+                <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
+                  <img src="/images/library/kids/Mimimoo Illustration _ Digital Illustrator and Content Creator.jpg" class="thumbnail img-fluid"  data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/library/kids/Mimimoo Illustration _ Digital Illustrator and Content Creator.jpg">
+                </div>
+                <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
+                  <img src="/images/library/kids/Salima Alikhan Other _ I Can Be All Three -- Salima Alikhan _ Color_ Gold _ Size_ Hardcover.jpg" class="thumbnail img-fluid"  data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/library/kids/Salima Alikhan Other _ I Can Be All Three -- Salima Alikhan _ Color_ Gold _ Size_ Hardcover.jpg">
+                </div>
+              </div>
+              
+          </div>
         </div>
-    <div class="card shadow bg-dark border-white m-3 ">
+    <div class="card carie m-3 ">
       <div class="card-body  ">
         <h1 class="card-header ps-5 ms-5 ">TEENS:</h1>
           <div class="row ">
-            <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
-              <img src="/images/library/teen/100 Best Books for 6th Graders (Age 11 – 12).jpg" alt="" class="img-fluid">
+            <div class="content-toggle">
+              <h3 onclick="toggleContent1()">description</h3>
+              <p id="toggle-content1" style="display: none;">The teen section has all books needed to escape reality and sink into a world of fiction. <br> the perfect collection to read after a long day of studying</p>
             </div>
             <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
-              <img src="/images/library/teen/100 Best Books for 7th Graders (12 Year Olds).jpg" alt="" class="img-fluid">
+              <img src="/images/library/teen/100 Best Books for 6th Graders (Age 11 – 12).jpg" class="thumbnail img-fluid"  data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/library/teen/100 Best Books for 6th Graders (Age 11 – 12).jpg">
             </div>
             <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
-              <img src="/images/library/teen/Behind the Canvas [Book].jpg" alt="" class="img-fluid">
+              <img src="/images/library/teen/100 Best Books for 7th Graders (12 Year Olds).jpg" class="thumbnail img-fluid"  data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/library/teen/100 Best Books for 7th Graders (12 Year Olds).jpg">
             </div>
             <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
-              <img src="/images/library/teen/Pinterest.jpg" alt="" class="img-fluid">
+              <img src="/images/library/teen/Behind the Canvas [Book].jpg" class="thumbnail img-fluid"  data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/library/teen/Behind the Canvas [Book].jpg">
             </div>
             <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
-              <img src="/images/library/teen/Fantasy Book Cover Design.jpg" alt="" class="img-fluid">
+              <img src="/images/library/teen/Pinterest.jpg" class="thumbnail img-fluid"  data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/library/teen/Pinterest.jpg">
+            </div>
+            <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
+              <img src="/images/library/teen/Fantasy Book Cover Design.jpg" class="thumbnail img-fluid"  data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/library/teen/Fantasy Book Cover Design.jpg">
             </div>
           </div>
       </div>
     </div>
-  <div class="card shadow bg-dark border-white m-3 ">
+  <div class="card carie m-3 ">
     <div class="card-body  ">
       <h1 class="card-header ps-5 ms-5 ">EDUCATIONAL:</h1>
+      <div class="content-toggle">
+        <h3 onclick="toggleContent2()">description</h3>
+        <p id="toggle-content2" style="display: none;">The EDUCATIONAL section has all books needed to enhance your knowledge. <br> the perfect collection to give to go over while studying</p>
+      </div>
         <div class="row ">
           <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
-            <img src="/images/library/educational/Other Words For Home (Thorndike Press Large Print Striving Reader Collection).jpg" alt="" class="img-fluid">
+            <img src="/images/library/educational/Other Words For Home (Thorndike Press Large Print Striving Reader Collection).jpg" class="thumbnail img-fluid"  data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/library/educational/Other Words For Home (Thorndike Press Large Print Striving Reader Collection).jpg">
           </div>
           <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
-            <img src="/images/library/educational/Icarus [Book].jpg" alt="" class="img-fluid">
+            <img src="/images/library/educational/Icarus [Book].jpg" class="thumbnail img-fluid"  data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/library/educational/Icarus [Book].jpg">
           </div>
           <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
-            <img src="/images/library/educational/Better Minds.jpg" alt="" class="img-fluid">
+            <img src="/images/library/educational/Better Minds.jpg" class="thumbnail img-fluid"  data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/library/educational/Better Minds.jpg">
           </div>
           <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
-            <img src="/images/library/educational/Out of Character [Book].jpg" alt="" class="img-fluid">
+            <img src="/images/library/educational/Out of Character [Book].jpg" class="thumbnail img-fluid"  data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/library/educational/Out of Character [Book].jpg">
           </div>
           <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
-            <img src="/images/library/educational/Where You See Yourself.jpg" alt="" class="img-fluid">
+            <img src="/images/library/educational/Where You See Yourself.jpg" class="thumbnail img-fluid"  data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/library/educational/Where You See Yourself.jpg">
           </div>
         </div>
     </div>
   </div>
-<div class="card shadow bg-dark border-white m-3 ">
+<div class="card carie m-3 ">
   <div class="card-body  ">
     <h1 class="card-header ps-5 ms-5 ">ADULTS:</h1>
-    
+    <div class="content-toggle">
+      <h3 onclick="toggleContent3()">description</h3>
+      <p id="toggle-content3" style="display: none;">The adult section has all books needed to escape reality into the life you wish you had. <br> the perfect collection to go through with a hot black coffee and a soft cake</p>
+    </div>
       <div class="row ">
         <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
-          <img src="/images/library/adults/Don't Let the Forest In.jpg" alt="" class="img-fluid">
+          <img src="/images/library/adults/Don't Let the Forest In.jpg" class="thumbnail img-fluid"  data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/library/adults/Don't Let the Forest In.jpg">
         </div>
         <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
-          <img src="/images/library/adults/Scariest New Horror Books To Read 2024.jpg" alt="" class="img-fluid">
+          <img src="/images/library/adults/Scariest New Horror Books To Read 2024.jpg" class="thumbnail img-fluid"  data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/library/adults/Scariest New Horror Books To Read 2024.jpg">
         </div>
         <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
-          <img src="/images/library/adults/Winter 2020-2021 YA Paperbacks For Your TBR.jpg" alt="" class="img-fluid">
+          <img src="/images/library/adults/Winter 2020-2021 YA Paperbacks For Your TBR.jpg" class="thumbnail img-fluid"  data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/library/adults/Winter 2020-2021 YA Paperbacks For Your TBR.jpg">
         </div>
         <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
-          <img src="/images/library/adults/c37eaff3-6ae3-443d-94a6-34b8a3d3b845.jpg" alt="" class="img-fluid">
+          <img src="/images/library/adults/c37eaff3-6ae3-443d-94a6-34b8a3d3b845.jpg" class="thumbnail img-fluid"  data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/library/adults/c37eaff3-6ae3-443d-94a6-34b8a3d3b845.jpg">
         </div>
         <div class=" col-lg-2 col-md-5 col-sm-11 m-3">
-          <img src="/images/library/adults/100 Best Books for 6th Graders (Age 11 – 12).jpg" alt="" class="img-fluid">
+          <img src="/images/library/adults/100 Best Books for 6th Graders (Age 11 – 12).jpg" class="thumbnail img-fluid"  data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/library/adults/100 Best Books for 6th Graders (Age 11 – 12).jpg">
         </div>
       </div>
   </div>
 </div>
 </section>
-
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-body">
+              <img src="" alt="Large Image" id="modalImage">
+          </div>
+      </div>
+  </div>
+</div>
+</div>
 <footer class="footer " >
           
   <div class="p-3 row " >
@@ -195,6 +246,8 @@
       <a href="mailto:hala.kablaoui@stu.ibu.edu.ba "target="_blank" ><h6>hala.kablaoui@stu.ibu.edu.ba</h6></a>
       <h6>123-456-789</h6>
       <h6>WEB DEVELOPMENT</h6>
+      <a href="feedback.html"><h6>Feedback </h6></a>
+
     </div>
 
     
@@ -230,6 +283,7 @@
     <h6 class="col-lg-4 col-5"> copyright 2025</h6>
     <h6 class="col-lg-4 col-2"> ummmm yah... </h6></div>
 </footer>
+<script src="/javascript/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://kit.fontawesome.com/2fbc0a7645.js" crossorigin="anonymous"></script>
     </body>

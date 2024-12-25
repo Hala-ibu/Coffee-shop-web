@@ -1,32 +1,85 @@
 <!DOCTYPE html>
-<html>
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" context="device-width, initial-scales.0">
-    <meta http-equiv="X-UA-Compatible" content-IE="edge">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>log in please</title>
-    </head>
-    <link rel="stylesheet" href="/sass/register.css">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="/sass/register.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Log in Please</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet" />
 
-<body >
-    
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .box {
+      margin-bottom: 15px;
+    }
+    .button {
+      padding: 10px 20px;
+      background-color: orange;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .button:hover {
+      background-color: brown;
+    }
+  </style>
 
-    <form action="https://jsonplaceholder.typicode.com/posts" method="GET" target="_blank" class="boxit">
-            <legend><h1>Log in</h1></legend>
-            <br>
-            <div class="box"><input type="email" placeholder="Email" name="Email" required> </div>
-            <div class="box"> <input type="password" placeholder="Password" name="Password" required></div>
-            <div class="row">
-            <button class="col-2" type="submit">sign in  <br><a href="first.page.html">go to first page</a></button>
-            <div class="col-6">
-            <p>dont have an account: <a href="registration.html">Register</a></p>
-            
-            </div>
-            <a href="  " class="rememberme1">Forgot password?</a>
-            </div>
-            <br>
-    </form>
-    
+</head>
+<body>
+
+  <form id="login-form" class="boxit">
+    <legend><h1>Log in</h1></legend>
+    <br>
+    <div class="box">
+      <input type="email" id="email" placeholder="Email" name="Email" required> 
+    </div>
+    <div class="box">
+      <input type="password" id="password" placeholder="Password" name="Password" required>
+    </div>
+    <div class="row">
+      <button class="col-2" type="submit">Sign in </button>
+      <div class="col-6">
+        <p>Don't have an account? <a href="registration.html">Register</a></p>
+      </div>
+      <a href=" " class="rememberme1">Forgot password?</a>
+    </div>
+    <br>
+  </form>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
+  <script>
+    document.getElementById('login-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+
+      if (email === '' || password === '') {
+        toastr.error('Please fill in both fields!', 'Login Error');
+      } else if (!validateEmail(email)) {
+        toastr.error('Please enter a valid email address!', 'Login Error');
+      } else {
+        toastr.success('Login successful! Redirecting...', 'Login Success');
+        
+        setTimeout(function() {
+          window.location.href = 'tryinganewstyle.html'; 
+        }, 1500); 
+      }
+    });
+
+    function validateEmail(email) {
+      const re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+      return re.test(email);
+    }
+  </script>
+
 </body>
 </html>
