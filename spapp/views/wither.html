@@ -1,0 +1,46 @@
+<div class="container">
+
+<section class="sec2">
+    <h1 class="card-header">NEWS FROM AROUND THE WORLD</h1>
+
+    <div  id="random-news">
+        <p>Loading...</p>
+    </div>
+</section>
+  
+
+  <script>
+    const apiKey = '3253810604c148c4a27970389031fc03';
+
+    function fetchRandomNews() {
+        const url = `https://newsapi.org/v2/top-headlines?apiKey=${apiKey}&language=en`; 
+
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                const newsContainer = document.getElementById('random-news');
+                newsContainer.innerHTML = ''; 
+
+                if (data.status === 'ok' && data.articles && data.articles.length > 0) {
+                    data.articles.forEach(article => {
+                        const articleElement = document.createElement('div');
+                        articleElement.innerHTML = `
+                            <h3><a href="${article.url}" target="_blank">${article.title}</a></h3>
+                            <p>${article.description ? article.description : 'No description available.'}</p>
+                            <small>Source: ${article.source.name}</small>
+                            <hr>
+                        `;
+                        newsContainer.appendChild(articleElement);
+                    });
+                } else {
+                    newsContainer.innerHTML = '<p>No news found. Please try again later.</p>';
+                }
+            })
+            .catch(error => {
+                const newsContainer = document.getElementById('random-news');
+                newsContainer.innerHTML = '<p>Error fetching news. Please try again later.</p>';
+                console.error('Error fetching news:', error);
+            });
+    }    fetchRandomNews();
+</script>
+</div>
