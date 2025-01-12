@@ -39,25 +39,6 @@ function toggleContent() {
     
   }
 
-const items = document.querySelectorAll('.carousel-item'); 
-  let currentIndex = 0;
-
-  function showSlide(index) {
-    items.forEach((item, i) => {
-      item.classList.toggle('active', i === index);
-    });
-  }
-
-  function next() {
-    currentIndex = (currentIndex + 1) % items.length; 
-    showSlide(currentIndex);
-  }
-
-  function prev() {
-    currentIndex = (currentIndex - 1 + items.length) % items.length; 
-    showSlide(currentIndex);}
-
-
 
     function toggleAccordion(id) {
       const content = document.getElementById(id);
@@ -82,3 +63,4 @@ const items = document.querySelectorAll('.carousel-item');
             modalImage.setAttribute('src', imageSrc)        });
           });
       
+        

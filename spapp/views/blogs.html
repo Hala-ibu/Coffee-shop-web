@@ -66,7 +66,7 @@
     const blogPostsContainer = document.getElementById('blog-posts');
 
     function loadBlogPosts() {
-      fetch('/javascript/my.json') 
+      fetch('assets/javascript/my.json') 
         .then(response => {
           if (!response.ok) {
             throw new Error('Network response was not ok ' + response.statusText);

@@ -123,6 +123,53 @@
     }, 15);
 });
 
+
+document.getElementById('myForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const Username = document.getElementById('Username').value.trim();
+    const FirstName = document.getElementById('FirstName').value.trim();
+    const LastName = document.getElementById('LastName').value.trim();
+    const Email = document.getElementById('Email').value.trim();
+    const Password = document.getElementById('Password').value.trim();
+    const Gender = document.getElementById('Gender').value;
+    const ContactMethod = document.querySelector('input[name="ContactMethod"]:checked')?.value;
+    const Age = parseInt(document.getElementById('Age').value, 10);
+    const check = document.getElementById('check').checked;
+
+    const message = document.getElementById('message');
+    message.textContent = 'Processing...';
+    message.style.display = 'block';
+
+    // Input validation
+    if (!Username || !FirstName || !LastName || !Email || !Password || !Gender || !ContactMethod || isNaN(Age)) {
+        message.textContent = 'Please fill in all fields correctly!';
+        message.className = 'error';
+        return;
+    }
+
+    // Save user data in localStorage
+    const users = JSON.parse(localStorage.getItem('users')) || [];
+    const userExists = users.find(user => user.Email === Email);
+
+    if (userExists) {
+        message.textContent = 'This email is already registered!';
+        message.className = 'error';
+        return;
+    }
+
+    users.push({ Username, FirstName, LastName, Email, Password, Gender, ContactMethod, Age, check });
+    localStorage.setItem('users', JSON.stringify(users));
+
+    message.textContent = 'Registration successful! Redirecting to login page...';
+    message.className = 'success';
+
+    setTimeout(() => {
+        window.location.href = "./login.html"; // Redirect to login page
+    }, 2000);
+});
+
+
     </script>
 
 </body>
