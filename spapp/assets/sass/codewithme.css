@@ -52,7 +52,7 @@ body a:hover {
   font-weight: bold;
   font-size: 1rem;
   border-radius: 5px;
-  box-shadow: 2px px 10px rgba(0, 0, 0, 0.8);
+  box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.8);
   transition: background 0.3s;
 }
 .button:hover {
@@ -143,7 +143,7 @@ body a:hover {
 
 .sec2 {
   width: 100%;
-  height: 120vh;
+  height: 140vh;
   background-color: #E1BB80;
   margin: 0%;
   padding: 0%;
@@ -294,13 +294,6 @@ body a:hover {
   width: 20%;
   height: auto;
   margin: 1%;
-}
-
-.imgitem {
-  width: 35%;
-  height: auto;
-  margin: 1%;
-  border-radius: 100%;
 }
 
 .img-item img {
